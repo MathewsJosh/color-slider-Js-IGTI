@@ -1,43 +1,89 @@
 body {
-    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
-    background-color: bisque;
+    background-color: rgb(239, 217, 250);
     font-family: monospace;
 }
 
 .title {
     text-align: center;
-    font-size: 5vh;
-    padding: 5vh;
+    font-size: 3em;
+    padding-top: 5vh;
+    padding-bottom: 8vh;
 }
-.corpo{
+
+input {
+    width: 300px;
+    height: 15px;
+    -webkit-appearance: none;
+    background-color:white;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
+}
+
+input#range1::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+    border: 4px solid #333;
+    box-shadow: -407px 0 0 400px rgb(255, 0, 0);
+}
+input#range2::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 0);
+    cursor: pointer;
+    border: 4px solid #333;
+    box-shadow: -407px 0 0 400px rgb(0, 255, 0);
+}
+input#range3::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 255);
+    cursor: pointer;
+    border: 4px solid #333;
+    box-shadow: -407px 0 0 400px rgb(0, 0, 255);
+}
+
+.corpo {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
+
     align-items: center;
     align-content: center;
     justify-content: center;
 }
 
 .interface {
-    border: 20px ridge #ccc;    
-    padding-top: 4vh;
-    
-    
+    border: 20px ridge rgb(240, 198, 245);
+    box-shadow: 10px 10px 10px 5px black;
+    width: fit-content;
+    padding-top: 2vh;
 }
 
-.texto{
+.texto {
     text-align: justify;
     font-size: 1.5em;
     width: 150px;
 }
 
-
 .item {
     /* Cada item é uma linha do projeto */
     margin: 5px;
-    background: tomato;
     width: fit-content;
     display: flex;
 }
@@ -45,6 +91,7 @@ body {
 .valorCor {
     /* Caixa de exibição do valor da barra */
     width: 5vh;
+    background-color: white;
 }
 
 .circulo {
@@ -58,4 +105,15 @@ body {
     border-style: groove;
     border-radius: 50%;
     background-color: white;
+}
+
+footer {
+    font-size: 1.5em;
+    color: #9999ff;
+    margin-top: 30vh;
+}
+
+footer a {
+    text-decoration: none;
+    color: #9999ff;
 }
