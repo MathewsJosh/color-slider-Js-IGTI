@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Color Mixer</title>
+</head>
+
+<body>
+    <h1 class="title">Color Mixer</h1>
+
+    <section class="corpo interface">
+        <div class="item" id="red">
+            <div class="texto">(R) Vermelho:</div>
+            <input class="barra" id="range1" type="range" min="0" max="255" value="0" step="1">
+            <input class="valorCor" id="exibeCor1" value="0" disabled />
+        </div>
+
+        <div class="item" id="green">
+            <div class="texto">(G) Verde:</div>
+            <input class="barra" id="range2" type="range" min="0" max="255" value="0" step="1">
+            <input class="valorCor" id="exibeCor2" value="0" disabled />
+        </div>
+
+        <div class="item" id="blue">
+            <div class="texto">(B) Azul:</div>
+            <input class="barra" id="range3" type="range" min="0" max="255" value="0" step="1">
+            <input class="valorCor" id="exibeCor3" value="0" disabled />
+        </div>
+        <div class="circulo" id="rgbCirculo"></div>
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+body {
+    margin:0 auto;
+    text-align: center;
+    background-color: bisque;
+    font-family: monospace;
+}
+
+.title {
+    text-align: center;
+    font-size: 5vh;
+    padding: 5vh;
+}
+.corpo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.interface {
+    border: 20px ridge #ccc;    
+    padding-top: 4vh;
+    
+    
+}
+
+.texto{
+    text-align: justify;
+    font-size: 1.5em;
+    width: 150px;
+}
+
+
+.item {
+    /* Cada item é uma linha do projeto */
+    margin: 5px;
+    background: tomato;
+    width: fit-content;
+    display: flex;
+}
+
+.valorCor {
+    /* Caixa de exibição do valor da barra */
+    width: 5vh;
+}
+
+.circulo {
+    height: 20vh;
+    width: 20vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    align-self: center;
+    border-color: black;
+    border-width: 3px;
+    border-style: groove;
+    border-radius: 50%;
+    background-color: white;
+}
