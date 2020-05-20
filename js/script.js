@@ -1,7 +1,6 @@
 window.addEventListener("load", start);
 
 var range = null;
-var i = null;
 var a=0,b=0,c=0;
 var circulo = document.getElementById("rgbCirculo");
 
